@@ -133,6 +133,7 @@ public class Entry
         _Prompt = prompt;
         _Response = response;
     }
+    
 
     public void Display()
     {
