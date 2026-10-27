@@ -1,4 +1,3 @@
 first you write "git add ."
 then you type "git commit -m ["message in parentheses"]"
-then to show the changes in git hub,
-you type "git push"
+then to show the changes in git hub, you type "git push"
