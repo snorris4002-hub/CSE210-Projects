@@ -10,34 +10,34 @@ public class Program
         // Reflection prompts
         List<string> reflectionPrompts = new List<string>
         {
-            "Think of a time when you stood up for someone else.",
-            "Think of a time when you did something really difficult.",
-            "Think of a time when you helped someone in need.",
-            "Think of a time when you did something truly selfless."
+            "Think of a time when you did the right thing. Even if it was hard.",
+            "Think of a time when you overcame a difficult task.",
+            "Is there a time where you help someone in desperate times?",
+            "Who is a hero of yours and why?",
+            "What compliments have you received?",
         };
 
         // Reflection questions
         List<string> reflectionQuestions = new List<string>
         {
-            "Why was this experience meaningful to you?",
-            "Have you ever done anything like this before?",
-            "How did you get started?",
+            "Why did this mean something to you?",
+            "Have you done this since the first time?",
+            "What was you process?",
             "How did you feel when it was complete?",
-            "What made this time different from other times?",
-            "What is your favorite thing about this experience?",
-            "What could you learn from this experience?",
-            "What did you learn about yourself?",
-            "How can you keep this experience in mind in the future?"
+            "What is your favorite thing about this moment?",
+            "What did you learn then?",
+            "What did you discover about yourself?",
+            "What will this change for your future?"
         };
 
         // Listing prompts
         List<string> listingPrompts = new List<string>
         {
-            "Who are people that you appreciate?",
-            "What are personal strengths of yours?",
-            "Who are people that you have helped this week?",
+            "Who are some important people in your life?",
+            "What are your strengths?",
+            "What are you currently working on improving?",
+            "Who are people that you helped recently?",
             "When have you felt the Holy Ghost this month?",
-            "Who are some of your personal heroes?"
         };
 
         // Listing items
@@ -51,7 +51,7 @@ public class Program
 
             Console.WriteLine("Welcome to the Mindfulness Program!");
             Console.WriteLine();
-            Console.WriteLine("Please select an activity:");
+            Console.WriteLine("Please select an activity with corresponding number:");
             Console.WriteLine();
             Console.WriteLine("1. Breathing Activity");
             Console.WriteLine("2. Reflection Activity");
@@ -69,7 +69,7 @@ public class Program
                 case "1":
                     BreathingActivity breathing = new BreathingActivity(
                         "Breathing",
-                        "This activity will help you relax by walking you through breathing in and out slowly. Clear your mind and focus on your breathing.",
+                        "With slow, breathing, this activity will help clear your mind.",
                         4,
                         4
                     );
@@ -80,7 +80,7 @@ public class Program
                 case "2":
                     ReflectionActivity reflection = new ReflectionActivity(
                         "Reflection",
-                        "This activity will help you reflect on times in your life when you have shown strength and resilience. This will help you recognize the power you have and how you can use it in other aspects of your life.",
+                        "This activity asks yourself questions to help you reflect on your strengths in moments past.",
                         reflectionPrompts,
                         reflectionQuestions,
                         random
@@ -92,7 +92,7 @@ public class Program
                 case "3":
                     ListingActivity listing = new ListingActivity(
                         "Listing",
-                        "This activity will help you reflect on the good things in your life by having you list as many things as you can in a certain area.",
+                        "This activity is all about listing things that apply to you in a random subject.",
                         listingPrompts,
                         listingItems,
                         random
